@@ -1,0 +1,29 @@
+[
+    { 
+        "id": 1, 
+        "AddressId": 1, 
+        "Name": "Eric Waight", 
+        "Company": "Company 1", 
+        "Email": "mail@email.com", 
+        "Username": "user1", 
+        "Password:": "asdasdkj123"
+    },
+    { 
+        "id": 2, 
+        "AddressId": 2, 
+        "Name": "Jim Testerson", 
+        "Company": "Company 2", 
+        "Email": "mail@email.com", 
+        "Username": "user2", 
+        "Password:": "asdasdkj123"
+    },
+    { 
+        "id": 3, 
+        "AddressId": 3, 
+        "Name": "Jummer Jumerto", 
+        "Company": "Company 3", 
+        "Email": "mail@email.com", 
+        "Username": "user3", 
+        "Password:": "asdasdkj123"
+    }
+]

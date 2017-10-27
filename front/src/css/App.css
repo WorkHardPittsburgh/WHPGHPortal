@@ -1,0 +1,147 @@
+/*General Styles*/
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #0094c7;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: white;
+}
+
+p,
+h3,
+h4 {
+    color: black;
+}
+
+.app {
+    text-align: center;
+}
+
+.app-logo {
+    height: 149px;
+    width: 253px;
+    float: left;
+    margin-top: 9px;
+}
+
+.app-header {
+    background-color: #2d2d2d;
+    height: 166px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav-header {
+    margin-right: 7px;
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-top: 134px;
+    font-size: 1em;
+    color: #0094c7;
+    margin-right: 40px;
+}
+
+.app-intro {
+    font-size: large;
+}
+
+.create-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+ }
+ 
+ .form-title {
+     margin-bottom: 10px;
+ }
+ 
+ .create-label {
+     float: left;
+     margin-right: 70%;
+     color: #0094c7;
+     display: block;
+     font-size: 1.1em;
+ }
+ 
+ .input {
+     width: 99%;
+     height: 30px;
+     float: left;
+     border: 1px solid #000000;
+     display: block;
+     margin-bottom: 10px;
+     padding-left: 5px;
+ }
+ 
+ .input-desc {
+     width: 99%;
+     height: 80px;
+     float: left;
+     border: 1px solid #000000;
+     display: block;
+     margin-bottom: 10px;
+     padding-left: 5px;
+ }
+ 
+ .select {
+     width: 100%;
+     height: 34px;
+     border: 1px solid #000000;
+     margin-bottom: 10px;
+     padding-left: 5px;
+ }
+ 
+ .save-button {
+     float: right;
+     background-color: #2d2d2d;
+     color: #0094c7;
+     width: 100px;
+     height: 30px;
+     border: none;
+     font-size: 1em;
+ }
+ 
+ .save-button:hover {
+     color: white;
+     cursor: pointer;
+ }
+ 
+ .cancel-button {
+     background-color: #2d2d2d;
+     color: white;
+     width: 100px;
+     height: 30px;
+     border: none;
+     margin-right: 10px;
+     margin-left: 390px;
+ }
+
+ .delete-button {
+     display: block;
+     background-color: #a00000;
+     color: white;
+     width: 100px;
+     height: 30px;
+     border: none;
+     margin-right: 10px;
+     margin-left: 390px;
+ }
+
+ .delete-button:hover {
+    color: white;
+    cursor: pointer;
+}

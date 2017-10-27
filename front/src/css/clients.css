@@ -1,0 +1,100 @@
+/*Client/Clients Styles*/
+h4 {
+    display: inline-block;
+}
+
+.name-head {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-top: 2px;
+}
+
+.company-head {
+    display: inline-block; 
+    margin-right: 165px;
+    width: 120px;
+    margin-top: 2px;
+}
+
+.email-head {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-top: 2px;
+}
+
+.actions-head {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-top: 2px;
+}
+
+.client-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.client-header {
+    background-color: #0094c7;
+    margin-top: 10px;
+    width: 95%;
+    padding: 5px;
+    height: 24px;
+}
+
+.client-body {
+    background-color: #2d2d2d;
+    color: white;
+    width: 95%;
+    padding: 5px;
+}
+
+.client-name {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-bottom: 3px;
+}
+
+.client-company {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-bottom: 3px;
+}
+
+.client-email {
+    display: inline-block;
+    margin-right: 165px;
+    width: 120px;
+    margin-bottom: 3px;
+}
+
+.action-edit {
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.action-delete {
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.action-pw {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.create-button {
+    float: right;
+    background-color: #2d2d2d;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: none;
+    margin-right: 50px;
+}
