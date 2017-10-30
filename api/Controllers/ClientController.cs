@@ -12,10 +12,10 @@ namespace api.Controllers {
         public ClientController (APIContext context) {
             _context = context;
 
-            if (_context.Clients.Count () == 0) {
-                _context.Clients.Add (new Client { AddressId = 1, Name = "Eric Waight", Company = "Test Company", Email = "ewaight@gmail.com", Username = "ewaight", Password = "Abc123$" });
-                _context.SaveChanges ();
-            }
+            // if (_context.Clients.Count () == 0) {
+            //     _context.Clients.Add (new Client { AddressId = 1, Name = "Eric Waight", Company = "Test Company", Email = "ewaight@gmail.com", Username = "ewaight", Password = "Abc123$" });
+            //     _context.SaveChanges ();
+            // }
         }
         //GET: /api/clients!
         [Route ("")]
