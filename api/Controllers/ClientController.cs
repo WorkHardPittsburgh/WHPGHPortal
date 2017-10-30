@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using api.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers {
-    [Route ("api/[controller]")]
+    [Route ("api/clients")]
     public class ClientController : Controller {
         private readonly APIContext _context;
 
@@ -16,19 +17,60 @@ namespace api.Controllers {
                 _context.SaveChanges ();
             }
         }
-
+        //GET: /api/clients
+        [Route ("")]
         [HttpGet]
         public IEnumerable<Client> GetAll () {
             return _context.Clients.ToList ();
         }
 
-        [HttpGet ("{id}", Name = "GetClients")]
+        //GET: /api/clients/{id}
+        [Route ("{id}")]
+        // [HttpGet ("{id}", Name = "GetClients")]
         public IActionResult GetById (long id) {
             var item = _context.Clients.FirstOrDefault (t => t.Id == id);
             if (item == null) {
                 return NotFound ();
             }
             return new ObjectResult (item);
+        }
+
+        //POST: /api/clients
+        [Route ("")]
+        [HttpPost]
+        public IActionResult Create ([FromBody] Client client) {
+                if (client == null) {
+                    return BadRequest ();
+                }
+
+                _context.Clients.Add (client);
+                _context.SaveChanges ();
+
+                return CreatedAtRoute ("", new { id = client.Id }, client);
+            }
+
+        [Route ("{id}")]
+        [HttpPut]
+        public IActionResult Update (int id, [FromBody] Client client) {
+            if (client == null || client.Id != id) {
+                return BadRequest ();
+            }
+
+            var selectedClient = _context.Clients.FirstOrDefault (t => t.Id == id);
+            if (selectedClient == null) {
+                return NotFound ();
+            }
+
+            selectedClient.AddressId = client.AddressId;
+            selectedClient.Name = client.Name;
+            selectedClient.Company = client.Company;
+            selectedClient.Email = client.Email;
+            selectedClient.Username = client.Username;
+            selectedClient.Password = client.Password;
+
+            _context.Clients.Update (selectedClient);
+            _context.SaveChanges ();
+            return new NoContentResult ();
         }
     }
 }

@@ -9683,16 +9683,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal_New/api/api.csproj",
+      "projectUniqueName": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal_New/api/api.csproj",
-      "outputPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal_New/api/obj/",
+      "projectPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/api.csproj",
+      "outputPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/api.dll": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal_New/api/bin/placeholder/netcoreapp1.1/api.dll"
+        "lib/netcoreapp1.1/api.dll": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/bin/placeholder/netcoreapp1.1/api.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

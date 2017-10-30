@@ -1,0 +1,64 @@
+/*Project Component*/
+
+h3,
+h4 {
+    color: white;
+}
+
+p {
+    display: inline-block;
+    color: white;
+    padding: 3px;
+}
+
+.project-header {
+    background-color: #0094c7;
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    height: 28px;
+    vertical-align: top;
+}
+
+#project-title {
+    float: left;
+    margin-top: 3px;
+}
+
+#status {
+    float: right;
+    margin-top: 3px;
+}
+
+.project-body {
+    background-color: #2d2d2d;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    height: 70px;
+}
+
+.project-container {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+/*Projects Style*/
+
+.projects {
+
+}
+
+.my-projects {
+
+}
+
+.wh-projects {
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+    display: inline-block;
+}
