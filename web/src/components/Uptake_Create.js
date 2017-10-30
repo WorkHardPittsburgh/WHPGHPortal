@@ -45,6 +45,7 @@ class CreateUptake extends Component {
     this.props.createUptake(values, () => {
         this.props.history.push('/uptakes');
     });
+    console.log(values);
   }
 
   render() {
