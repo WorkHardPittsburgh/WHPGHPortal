@@ -17,7 +17,7 @@ namespace api.Controllers {
                 _context.SaveChanges ();
             }
         }
-        //GET: /api/clients
+        //GET: /api/clients!
         [Route ("")]
         [HttpGet]
         public IEnumerable<Client> GetAll () {
