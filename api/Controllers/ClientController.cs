@@ -39,15 +39,15 @@ namespace api.Controllers {
         [Route ("")]
         [HttpPost]
         public IActionResult Create ([FromBody] Client client) {
-                if (client == null) {
-                    return BadRequest ();
-                }
-
-                _context.Clients.Add (client);
-                _context.SaveChanges ();
-
-                return CreatedAtRoute ("", new { id = client.Id }, client);
+            if (client == null) {
+                return BadRequest ();
             }
+
+            _context.Clients.Add (client);
+            _context.SaveChanges ();
+
+            return CreatedAtRoute ("", new { id = client.Id }, client);
+        }
 
         [Route ("{id}")]
         [HttpPut]
@@ -69,6 +69,19 @@ namespace api.Controllers {
             selectedClient.Password = client.Password;
 
             _context.Clients.Update (selectedClient);
+            _context.SaveChanges ();
+            return new NoContentResult ();
+        }
+
+        [Route ("{id}")]
+        [HttpDelete]
+        public IActionResult Delete (int id) {
+            var item = _context.Clients.FirstOrDefault (t => t.Id == id);
+            if (item == null) {
+                return NotFound ();
+            }
+
+            _context.Clients.Remove (item);
             _context.SaveChanges ();
             return new NoContentResult ();
         }
