@@ -10,6 +10,7 @@ namespace api.Models
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Address> Addresses { get; set; }
     }
 
 }
