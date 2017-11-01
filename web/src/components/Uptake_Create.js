@@ -10,10 +10,12 @@ import '../css/App.css';
 import { CurrentUser } from '../scripts/Globals.js';
 
 class CreateUptake extends Component {
+  // getting current clients to choose from for uptake
   componentDidMount() {
     this.props.fetchClients();
   }
-  
+
+  //renders the input for redux-form
   renderField(field) {
     const { meta: { touched, error } }  = field;
     const className = `form-group ${touched && error ? 'has-danger' : ''}`;
@@ -33,26 +35,18 @@ class CreateUptake extends Component {
     );
   }
 
-  renderClients() {
-    return _.map(this.props.clients, client =>
-      <option>
-        {client.Name}
-      </option>
-    );
-  }
-
+  // submits the values to redux
   onSubmit(values) {
     this.props.createUptake(values, () => {
         this.props.history.push('/uptakes');
     });
-    console.log(values);
+    // console.log(values);
   }
 
   render() {
-    const { handleSubmit } = this.props;
+    const { handleSubmit } = this.props; //handleSubmit is a prop of redux-form
 
     return (
-      // <div>MAKING AN UPTAKE</div>
       <div className="wrap">
         <form className="create-form" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
           <h2 className="form-title">Create Uptake</h2>
@@ -62,64 +56,52 @@ class CreateUptake extends Component {
             type="text"
             component={this.renderField}
           />
-          {/*<label className="create-label">
-            Project Name
-          </label>
-          <input
-            className="input"
-            name="ProjectName"
-            type="text"
-            checked={this.state.ProjectDesc}
-            onChange={this.handleInputChange}/>
-
-          <label className="create-label">
-            Status
-          </label>
-          <select
-            className="select"
-            name="UptakeStatus"
-            value={this.state.UptakeStatus}
-            onChange={this.handleInputChange}>
-            <option value=''>Select</option>
-            <option value='New'>New</option>
-            <option value='Accepted'>Accepted</option>
-            <option value='Declined'>Declined</option>
-          </select>*/}
           <label>Service Type</label>
           <div>
             <Field
               label="Service Type"
               name="ServiceType"
-              component="select">
+              component="select"
+              className="form-control">
               <option />
               <option value="Web Development">Web Development</option>
               <option value="Multimedia">Multimedia</option>
               <option value="SEO">SEO</option>
             </Field>
           </div>
-        
-          {/*Need to render clients to be able to select */}
-          <label>Clients</label>
           <div>
+            <label>Clients</label>
             <Field
               label="Client"
               name="ClientId"
-              component="select">
-              <div>
-
-              </div>
-            {/*<option />
-            <option>Josh</option>*/}
+              type="number"
+              component="select"
+              className="form-control">
+              {_.map(this.props.clients, client => {
+                return (
+                  <option key={client.Name} value={client.id}>
+                    {client.Name}
+                  </option>
+                );
+              })}
             </Field>
           </div>
-          <Field 
-            label="Project Description"
-            name="ProjectDesc"
-            type="textarea"
-            component={this.renderField}>
-            
-          </Field>
-          
+          <div>
+            <label>Project Description</label>
+            <Field 
+              label="Project Description"
+              name="ProjectDesc"
+              type="textarea"
+              component="textarea"
+              className="form-control">
+            </Field>
+          </div>
+          <Field
+            name="ProjectStatus"
+            type="text"
+            value="new"
+            component={this.projectStatus}
+          />
           <button className="cancel-button">
             <Link to='/uptakes'>Cancel</Link>
           </button>
@@ -145,15 +127,9 @@ function validate(values) {
   if (!values.ServiceType) {
       errors.ServiceType = "Select a service type."
   }
-  if (!values.Email) {
-      errors.Email = "Enter an email address."
-  }
-  if (!values.Username) {
-      errors.Username = "Enter a username."
-  }
-  if (!values.Password) {
-      errors.Password = "Enter a password."
-  }
+  // if (!values.ProjectDec) {
+  //     errors.ProjectDesc = "Write out a project description."
+  // }
       // If errors is empty, form is fine to submit
       // If errors has any properties, Rdeux Form assumes form is invalid
   return errors;
@@ -165,7 +141,13 @@ function mapStateToProps(state) {
 
 export default reduxForm({
   validate,
-  form: 'NewUptakeForm'
+  form: 'NewUptakeForm',
+  initialValues: { 
+    ProjectStatus: 'New',
+    UptakeStatus: 'New',
+    OwnerId: 1, 
+  },
+  enableReinitialize: true
 })(
   connect(mapStateToProps, { createUptake, fetchClients })(CreateUptake)
 );
