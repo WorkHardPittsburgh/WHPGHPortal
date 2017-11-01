@@ -96,12 +96,6 @@ class CreateUptake extends Component {
               className="form-control">
             </Field>
           </div>
-          <Field
-            name="ProjectStatus"
-            type="text"
-            value="new"
-            component={this.projectStatus}
-          />
           <button className="cancel-button">
             <Link to='/uptakes'>Cancel</Link>
           </button>
