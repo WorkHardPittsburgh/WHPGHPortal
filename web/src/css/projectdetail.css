@@ -1,9 +1,20 @@
 /*Project Detail Styles*/
 
-.label {
+.project-name {
     color: #2d2d2d;
+    font-size: 36px;
+}
+
+.title {
+    color: #2d2d2d;
+    font-size: 24px;
 }
 
 .value {
     color: #0094c7;
+    display: inline-block;
 }
+.normal {
+    color: #2d2d2d;
+}
+
