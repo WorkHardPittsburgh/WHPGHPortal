@@ -17,7 +17,7 @@ namespace api.Controllers {
             //     _context.SaveChanges ();
             // }
         }
-        //GET: /api/clients!
+        //GET: /api/clients
         [Route ("")]
         [HttpGet]
         public IEnumerable<Client> GetAll () {
@@ -26,7 +26,6 @@ namespace api.Controllers {
 
         //GET: /api/clients/{id}
         [Route ("{id}")]
-        // [HttpGet ("{id}", Name = "GetClients")]
         public IActionResult GetById (long id) {
             var item = _context.Clients.FirstOrDefault (t => t.Id == id);
             if (item == null) {
@@ -38,21 +37,21 @@ namespace api.Controllers {
         //POST: /api/clients
         [Route ("")]
         [HttpPost]
-        public IActionResult Create ([FromBody] Client client) {
-            if (client == null) {
+        public IActionResult Create ([FromBody] Client item) {
+            if (item == null) {
                 return BadRequest ();
             }
 
-            _context.Clients.Add (client);
+            _context.Clients.Add (item);
             _context.SaveChanges ();
 
-            return CreatedAtRoute ("", new { id = client.Id }, client);
+            return new ObjectResult (item);
         }
 
         [Route ("{id}")]
         [HttpPut]
-        public IActionResult Update (int id, [FromBody] Client client) {
-            if (client == null || client.Id != id) {
+        public IActionResult Update (int id, [FromBody] Client item) {
+            if (item == null || item.Id != id) {
                 return BadRequest ();
             }
 
@@ -61,16 +60,16 @@ namespace api.Controllers {
                 return NotFound ();
             }
 
-            selectedClient.AddressId = client.AddressId;
-            selectedClient.Name = client.Name;
-            selectedClient.Company = client.Company;
-            selectedClient.Email = client.Email;
-            selectedClient.Username = client.Username;
-            selectedClient.Password = client.Password;
+            selectedClient.AddressId = item.AddressId;
+            selectedClient.Name = item.Name;
+            selectedClient.Company = item.Company;
+            selectedClient.Email = item.Email;
+            selectedClient.Username = item.Username;
+            selectedClient.Password = item.Password;
 
             _context.Clients.Update (selectedClient);
             _context.SaveChanges ();
-            return new NoContentResult ();
+            return new ObjectResult (item);
         }
 
         [Route ("{id}")]
