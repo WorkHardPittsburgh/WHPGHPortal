@@ -89,6 +89,12 @@
       "ProjectStatus": "New",
       "ClientId": 1,
       "OwnerId": 3
+    },
+    {
+      "ProjectName": "TEst",
+      "ServiceType": "Web Development",
+      "ProjectDesc": "asdjlkasjd",
+      "id": 10
     }
   ],
   "Milestones": [

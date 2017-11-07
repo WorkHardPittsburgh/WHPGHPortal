@@ -21,7 +21,7 @@ namespace api.Controllers {
         }
 
         //GET: /api/addresses/{id}
-        [Route ("{id}")]
+        [HttpGet ("{id}")]
         public IActionResult GetById (int id) {
             var item = _context.Addresses.FirstOrDefault (t => t.Id == id);
             if (item == null) {
@@ -32,7 +32,6 @@ namespace api.Controllers {
         }
 
         //POST: /api/addresses/
-        [Route ("")]
         [HttpPost]
         public IActionResult Create ([FromBody] Address item) {
             if (item == null) {
@@ -46,8 +45,7 @@ namespace api.Controllers {
         }
 
         //PUT: /api/addresses/{id}
-        [Route ("{id}")]
-        [HttpPut]
+        [HttpPut ("{id}")]
         public IActionResult Update (int id, [FromBody] Address item) {
             if (item == null || item.Id != id) {
                 return BadRequest ();
@@ -69,8 +67,7 @@ namespace api.Controllers {
         }
 
         //DELETE: /api/addresses/{id}
-        [Route ("{id}")]
-        [HttpDelete]
+        [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var item = _context.Addresses.FirstOrDefault (t => t.Id == id);
             if (item == null) {

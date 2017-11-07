@@ -11,22 +11,17 @@ namespace api.Controllers {
 
         public ClientController (APIContext context) {
             _context = context;
-
-            // if (_context.Clients.Count () == 0) {
-            //     _context.Clients.Add (new Client { AddressId = 1, Name = "Eric Waight", Company = "Test Company", Email = "ewaight@gmail.com", Username = "ewaight", Password = "Abc123$" });
-            //     _context.SaveChanges ();
-            // }
         }
+
         //GET: /api/clients
-        [Route ("")]
-        [HttpGet]
+        [HttpGet ("")]
         public IEnumerable<Client> GetAll () {
             return _context.Clients.ToList ();
         }
 
         //GET: /api/clients/{id}
-        [Route ("{id}")]
-        public IActionResult GetById (long id) {
+        [HttpGet ("{id}")]
+        public IActionResult GetById (int id) {
             var item = _context.Clients.FirstOrDefault (t => t.Id == id);
             if (item == null) {
                 return NotFound ();
@@ -35,7 +30,6 @@ namespace api.Controllers {
         }
 
         //POST: /api/clients
-        [Route ("")]
         [HttpPost]
         public IActionResult Create ([FromBody] Client item) {
             if (item == null) {
@@ -48,8 +42,8 @@ namespace api.Controllers {
             return new ObjectResult (item);
         }
 
-        [Route ("{id}")]
-        [HttpPut]
+        //PUT: /api/clients
+        [HttpPut ("{id}")]
         public IActionResult Update (int id, [FromBody] Client item) {
             if (item == null || item.Id != id) {
                 return BadRequest ();
@@ -72,8 +66,8 @@ namespace api.Controllers {
             return new ObjectResult (item);
         }
 
-        [Route ("{id}")]
-        [HttpDelete]
+        //DELETE: /api/clients/1
+        [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var item = _context.Clients.FirstOrDefault (t => t.Id == id);
             if (item == null) {
