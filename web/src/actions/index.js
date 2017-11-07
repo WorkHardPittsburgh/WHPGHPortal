@@ -6,6 +6,7 @@ export const FETCH_UPTAKES = 'fetch_uptakes';
 export const CREATE_UPTAKE = 'create_uptake';
 
 export const FETCH_PROJECTS = 'fetch_projects';
+export const FETCH_PROJECT = 'fetch_project';
 
 export const FETCH_CLIENTS = 'fetch_clients';
 export const FETCH_CLIENT = 'fetch_client';
@@ -80,6 +81,15 @@ export function fetchProjects() {
     
     return {
         type: FETCH_PROJECTS,
+        payload: request
+    };
+}
+
+export function fetchProject(id) {
+    const request = axios.get(`${API_URL}/Uptakes/${id}`);
+    
+    return {
+        type: FETCH_PROJECT,
         payload: request
     };
 }
