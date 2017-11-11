@@ -4,19 +4,17 @@ using System.Threading.Tasks;
 using api.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace api.Controllers
-{
-    [Route("api/milestones")]
+namespace api.Controllers {
+    [Route ("api/milestones")]
 
-    public class MilestoneController : Controller
-    {
+    public class MilestoneController : Controller {
         private readonly APIContext _context;
 
         public MilestoneController (APIContext context) {
             _context = context;
         }
 
-         //GET: api/milestones
+        //GET: api/milestones
         [HttpGet]
         public IEnumerable<Milestone> GetAll () {
             return _context.Milestones.ToList ();
@@ -72,7 +70,7 @@ namespace api.Controllers
             return new ObjectResult (item);
         }
 
-         //DELETE: /api/milestones/1
+        //DELETE: /api/milestones/1
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var item = _context.Milestones.FirstOrDefault (t => t.Id == id);

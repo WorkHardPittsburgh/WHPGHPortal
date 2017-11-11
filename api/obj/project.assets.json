@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -9686,18 +9686,28 @@
       "projectUniqueName": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/api.csproj",
       "projectName": "api",
       "projectPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/api.csproj",
+      "packagesPath": "/Users/ericwaight/.nuget/packages/",
       "outputPath": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/obj/",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ericwaight/.nuget/NuGet/NuGet.Config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/api.dll": "/Users/ericwaight/Projects/Client-Projects/WorkHardPittsburgh/WHPGHPortal/api/bin/placeholder/netcoreapp1.1/api.dll"
+      "sources": {
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -9705,7 +9715,8 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
           },
           "Microsoft.AspNetCore": {
             "target": "Package",

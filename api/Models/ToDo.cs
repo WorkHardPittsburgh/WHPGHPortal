@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace api.Models
 {
-    public class Task
+    public class ToDo
     {
         public int Id { get; set; }
         public int MilestoneId { get; set; }
@@ -12,7 +12,6 @@ namespace api.Models
         public string Name { get; set; }
         [MaxLength(50)]
         public string Description { get; set; }
-        public string TaskStatus { get; set; }
-        public string Milestones { get; set; }
+        public string ToDoStatus { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace api.Models {
         public DbSet<ContractReference> ContractReference { get; set; }
         public DbSet<ContractSampleWork> ContractSampleWork { get; set; }
         public DbSet<Milestone> Milestones { get; set; }
-        public DbSet<Task> Tasks { get; set; }
+        public DbSet<ToDo> ToDos { get; set; }
     }
 
 }
