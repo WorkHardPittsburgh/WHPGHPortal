@@ -1,0 +1,119 @@
+/*Project Detail Styles*/
+
+h1 {
+    color: #2d2d2d;
+}
+
+h3 {
+    color: #2d2d2d;
+    display: inline-block;
+}
+
+.project-name {
+    color: #2d2d2d;
+    font-size: 36px;
+}
+
+.title {
+    color: #2d2d2d;
+    font-size: 24px;
+}
+
+.detail {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+.p-body {
+    padding: 15px 30px;
+}
+
+.value {
+    color: #0094c7;
+    display: inline-block;
+}
+
+.white {
+    color: white;
+}
+
+.normal {
+    color: #2d2d2d;
+}
+
+.m-button {
+    /* display: inline-block; */
+    position: relative;
+    background-color: #2d2d2d;
+    color: #0094c7;
+    font-size: 1em;
+    border: none;
+    float: right;
+    margin-right: 5px;
+}
+
+.m-button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.m {
+    display: inline-block;
+}
+
+.m-header {
+    background-color: #0094c7;
+    width: 100%;
+    padding: 0px 5px;
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+}
+
+.m-header:hover {
+    background-color: #415a63;
+}
+
+.delete-milestone {
+    float: right;
+}
+
+.m-detail {
+    padding: 15px 30px;
+}
+
+.m-detail-title {
+    text-align: center;
+}
+
+.m-detail-title h3 {
+    color: #0094c7;
+    font-weight: bold;
+}
+
+.m-task-header {
+    background-color: #0094c7;
+    width: 100%;
+    padding: 0px 5px;
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+    font-size: 1.5em;
+    color: white;
+}
+
+.t-detail {
+    padding-top: 2em;
+}
+
+.task-value {
+    color: #0094c7;
+    display: block;
+    line-height: .25em;
+}
+
+.task-select {
+    float: right;
+    width: auto;
+}

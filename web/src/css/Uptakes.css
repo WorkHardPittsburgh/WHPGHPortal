@@ -1,0 +1,80 @@
+/*Uptake Component*/
+
+h3,
+h4 {
+    color: white;
+}
+
+p {
+    display: inline-block;
+    color: white;
+    padding: 3px;
+}
+
+.uptake-header {
+    background-color: #0094c7;
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    height: 28px;
+    vertical-align: top;
+}
+
+#uptake-title {
+    float: left;
+    margin-top: 3px;
+}
+
+#status {
+    float: right;
+    margin-top: 3px;
+}
+
+.uptake-body {
+    background-color: #2d2d2d;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    height: 70px;
+}
+
+.uptake-container {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+/*Uptakes Style*/
+
+.uptakes {
+    float: left;
+}
+
+.my-uptakes {
+    float: left;
+    width: 100%;
+}
+
+.wh-uptakes {
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.create-button {
+    float: right;
+    background-color: #2d2d2d;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: none;
+    margin-right: 50px;
+}
+
+.create-button:hover {
+    color: #0094c7;
+    cursor: pointer;
+}
+

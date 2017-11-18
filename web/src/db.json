@@ -1,0 +1,379 @@
+{
+  "Uptakes": [
+    {
+      "id": 1,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "Work Hard Customer Portal",
+      "ProjectDesc": "s, but also the leap into electronic typesetting",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 1
+    },
+    {
+      "id": 2,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "2 Days At A Time",
+      "ProjectDesc": "ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 1
+    },
+    {
+      "id": 3,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "Glass Industrial Corp",
+      "ProjectDesc": "et dolore magna aliqua. Ut enim ad minim veniam",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 1
+    },
+    {
+      "id": 4,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "Life Insurance Company",
+      "ProjectDesc": "i tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 1
+    },
+    {
+      "id": 5,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "PetConnect",
+      "ProjectDesc": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqua",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 2
+    },
+    {
+      "id": 6,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "Work Hard Applicatiion",
+      "ProjectDesc": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqua",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 2
+    },
+    {
+      "id": 7,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "Project Name",
+      "ProjectDesc": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqua",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 2
+    },
+    {
+      "id": 8,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "City of Pittsburgh Investment Board",
+      "ProjectDesc": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqua",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 2
+    },
+    {
+      "id": 9,
+      "UptakeStatus": "New",
+      "ServiceType": "Website Development",
+      "ProjectName": "New Academy Website",
+      "ProjectDesc": "Project Desc 3",
+      "ProjectStatus": "New",
+      "ClientId": 1,
+      "OwnerId": 3
+    },
+    {
+      "ProjectName": "Test",
+      "ServiceType": "Web Development",
+      "ClientId": "4",
+      "ProjectDesc": "This is a test project",
+      "id": 10
+    },
+    {
+      "ProjectStatus": "New",
+      "UptakeStatus": "New",
+      "OwnerId": 1,
+      "ProjectName": "Test Project",
+      "ServiceType": "Web Development",
+      "ClientId": "4",
+      "ProjectDesc": "This is a test project",
+      "id": 11
+    }
+  ],
+  "Milestones": [
+    {
+      "id": 1,
+      "UptakeId": 1,
+      "Name": "Milestone 1",
+      "Description": "Milestone 1 Description",
+      "Hours": 5,
+      "Rate": 50,
+      "PercentComplete": 0,
+      "StartDate": "2017-08-01",
+      "CompleteDate": "2017-08-30",
+      "MilestoneStatus": "To Do"
+    },
+    {
+      "id": 2,
+      "UptakeId": 1,
+      "Name": "Milestone 2",
+      "Description": "Milestone 2 Description",
+      "Hours": 5,
+      "Rate": 50,
+      "PercentComplete": 0,
+      "StartDate": "2017-08-01",
+      "CompleteDate": "2017-08-30",
+      "MilestoneStatus": "To Do"
+    },
+    {
+      "id": 3,
+      "UptakeId": 2,
+      "Name": "Milestone 3",
+      "Description": "Milestone 3 Description",
+      "Hours": 5,
+      "Rate": 50,
+      "PercentComplete": 0,
+      "StartDate": "2017-08-01",
+      "CompleteDate": "2017-08-01",
+      "MilestoneStatus": "To Do"
+    },
+    {
+      "Name": "Test Project",
+      "Description": "This is a test project",
+      "Hours": 5,
+      "Rate": 30,
+      "StartDate": "2017-11-14",
+      "EndDate": "2017-11-14",
+      "id": 4
+    },
+    {
+      "PercentComplete": 0,
+      "MilestoneStatus": "To Do",
+      "UptakeId": 1,
+      "Name": "Milestone Test",
+      "Description": "test to see if component will re-render",
+      "Hours": 3,
+      "Rate": 30,
+      "StartDate": "2017-11-16",
+      "CompleteDate": "2017-11-16",
+      "id": 5
+    },
+    {
+      "PercentComplete": 0,
+      "MilestoneStatus": "To Do",
+      "UptakeId": 1,
+      "Name": "Milestone Test 2",
+      "Description": "test to see if milestones will update",
+      "Hours": 3,
+      "Rate": 30,
+      "StartDate": "2017-11-16",
+      "CompleteDate": "2017-11-16",
+      "id": 6
+    },
+    {
+      "PercentComplete": 0,
+      "MilestoneStatus": "To Do",
+      "UptakeId": 1,
+      "Name": "Milestone Test 3",
+      "Description": "check to see if milestones will update",
+      "Hours": 3,
+      "Rate": 30,
+      "StartDate": "2017-11-16",
+      "CompleteDate": "2017-11-16",
+      "id": 7
+    }
+  ],
+  "Tasks": [
+    {
+      "id": 1,
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Wireframes",
+      "Description": "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pri",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 2,
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Design",
+      "Description": "ot only five centuries, but also the leap into electronic typesetting, remaining essentially un",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 3,
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Front End HTML",
+      "Description": "ng established fact that a reader will be distracted by the readable conte",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 4,
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Document Review",
+      "Description": "lor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamn",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 5,
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Manage Client Expectations",
+      "Description": "Task 3 Description",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 6,
+      "MilestoneId": 2,
+      "AssigneeId": 1,
+      "Name": "Testing and Bug Fixes",
+      "Description": "t, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 7,
+      "MilestoneId": 2,
+      "AssigneeId": 1,
+      "Name": "Task Name",
+      "Description": " nisi ut aliquid ex ea commodi consequatur",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 8,
+      "MilestoneId": 2,
+      "AssigneeId": 1,
+      "Name": "Name of the Task",
+      "Description": "dipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam ",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 9,
+      "MilestoneId": 3,
+      "AssigneeId": 2,
+      "Name": "Create Database Design",
+      "Description": "dipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam ",
+      "TaskStatus": "To Do"
+    },
+    {
+      "id": 10,
+      "MilestoneId": 3,
+      "AssigneeId": 2,
+      "Name": "Create Backend",
+      "Description": "dipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam n",
+      "TaskStatus": "To Do"
+    },
+    {
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Tasks Test",
+      "Description": "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pri",
+      "TaskStatus": "In Progress",
+      "id": 11
+    },
+    {
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Tasks Test 2",
+      "Description": "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pri",
+      "TaskStatus": "In Progress",
+      "id": 12
+    },
+    {
+      "MilestoneId": 1,
+      "AssigneeId": 1,
+      "Name": "Tasks Test 3",
+      "Description": "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pri",
+      "TaskStatus": "In Progress",
+      "id": 13,
+      "op": "replace",
+      "path": "/TaskStatus",
+      "value": "In Progress"
+    }
+  ],
+  "Clients": [
+    {
+      "id": 1,
+      "AddressId": 1,
+      "Name": "Eric Waight",
+      "Company": "Company 1",
+      "Email": "mail@email.com",
+      "Username": "user1",
+      "Password:": "asdasdkj123"
+    },
+    {
+      "id": 2,
+      "AddressId": 2,
+      "Name": "Jim Testerson",
+      "Company": "Company 2",
+      "Email": "mail@email.com",
+      "Username": "user2",
+      "Password:": "asdasdkj123"
+    },
+    {
+      "id": 3,
+      "AddressId": 3,
+      "Name": "Jummer Jumerto",
+      "Company": "Company 3",
+      "Email": "mail@email.com",
+      "Username": "user3",
+      "Password:": "asdasdkj123"
+    },
+    {
+      "Name": "Josh",
+      "Company": "Run Company",
+      "Email": "josh@email.com",
+      "Username": "josh",
+      "Password": "password",
+      "id": 4
+    },
+    {
+      "Name": "Clint K",
+      "Company": "Company 3",
+      "Email": "cint@email.com",
+      "Username": "clint123",
+      "Password": "pass1234",
+      "id": 5
+    },
+    {
+      "Name": "Aaron",
+      "Company": "Run Company",
+      "Email": "aaron@email.com",
+      "Username": "aaron",
+      "Password": "password",
+      "id": 6
+    }
+  ],
+  "Addresses": [
+    {
+      "id": 1,
+      "Street": "111 Elm Street",
+      "City": "Pittsburgh",
+      "State": "Pennsylvania",
+      "Zip": "16098"
+    },
+    {
+      "id": 2,
+      "Street": "113 Elm Street",
+      "City": "Pittsburgh",
+      "State": "Pennsylvania",
+      "Zip": "16098"
+    },
+    {
+      "id": 3,
+      "Street": "778 Elm Street",
+      "City": "Pittsburgh",
+      "State": "Pennsylvania",
+      "Zip": "16098"
+    }
+  ]
+}
